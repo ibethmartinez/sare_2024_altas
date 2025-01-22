@@ -1,0 +1,192 @@
+
+
+#contenedor_principal{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 8.3vh 91.7vh;
+}
+
+
+.Encabezado {  /*--Division 1 del grid header--*/
+    display: grid;
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+.Encabezado { /*--Division 2 del grid header--*/
+    display: grid;
+    grid-template-columns:10% 40% 20% 30%;
+    grid-template-rows: 100%; 
+}
+
+#map {  
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 2/2; 
+
+}
+
+#contenedor_vista_calle{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/2;  
+    height: 100%
+}
+
+.Sider{
+    padding: 0px;
+
+}
+
+.Sider{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/2;   
+}
+
+footer{
+
+    /*    display: grid;
+        grid-column: 1/3;
+        grid-row: 3/4;*/
+
+}
+/*grid encabezado*/
+.Div_Img_LogoSare{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;  
+
+
+}
+
+.Div_Busqueda_cve{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;      
+}
+
+.topnav{
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 1/2;       
+/*cambio mio*/
+
+}
+/*grid interno busqueda*/
+.Div_Busqueda_cve{
+    display: grid;
+    grid-template-columns: 75% 8% 17%;
+    grid-template-rows: 100%;  
+    margin-left: 50px;
+}
+
+.Usuario {
+    width: auto;
+    display: grid;
+    grid-column: 4 / 4;
+    grid-row: 1 / 2;
+    margin-left: 28px;
+    margin-top: 25.9%;
+}
+
+
+#formBusqueda{
+    width: auto;
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2;  
+/*    margin-left: 57px !important;
+    margin-top: 21px !important;
+    margin-bottom: 5px !important;*/
+
+}
+
+.onoffswitch{
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 1/2;  
+    width: auto;    
+    margin: 27px auto;
+    height: 25px;
+    margin-left: 41px;
+}
+
+
+.contenedor_listado_ver{
+   display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+/*    padding-top: 21px;
+    padding-bottom: 0px;
+    padding-left: 0px;*/
+    border: none !important;
+    background: transparent !important;
+
+
+}
+
+
+/*grid interno botones puntear vista calle e identificar*/
+
+.tab{
+    display:grid;
+    grid-template-columns:33.3% 33.3% 33.3%;
+    grid-template-rows:100%;
+}
+
+
+.boton_3{
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 1/2; 
+}
+
+.boton_2{
+    display: grid; 
+    grid-column: 2/3;
+    grid-row: 1/2;  
+}
+
+.boton_1{
+    display: grid; 
+    grid-column: 3/4;
+    grid-row: 1/2;  
+}
+
+#formBusqueda{
+    display:grid;
+    grid-template-columns:10% 90%;
+    grid-template-rows: 24% 26% 26% 24%;
+    padding: 0px;
+    margin: 0px;
+}
+
+.Btn_busqueda{
+    display: grid; 
+    grid-column: 1/2;
+    grid-row: 2/4;
+    align-items: center;
+}
+
+.Input_Buscador{
+    display: grid; 
+    grid-column: 2/3;
+    grid-row: 2/4;
+    align-items: center;
+}
+
+
+.flex-center.left {
+    top: -202% !important;
+}
+
+
+  /* Vista preliminar contenido dinamico*/
+    .conten_vp {
+        
+    }
+    
+ 
+ 

@@ -1,0 +1,8 @@
+mx\org\inegi\sare_2024_altas_web\config\WebConfig.class
+mx\org\inegi\sare_2024_altas_web\controller\LogInterceptor.class
+mx\org\inegi\sare_2024_altas_web\config\Const.class
+mx\org\inegi\sare_2024_altas_web\config\CORS.class
+mx\org\inegi\sare_2024_altas_web\config\WebInitializer.class
+mx\org\inegi\sare_2024_altas_web\controller\ServiceController.class
+mx\org\inegi\sare_2024_altas_web\servs\omnivore.class
+mx\org\inegi\sare_2024_altas_web\controller\DefaultController.class

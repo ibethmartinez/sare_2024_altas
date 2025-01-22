@@ -1,0 +1,126 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 24/10/2023, 10:48:01 AM
+    Author     : DELIA.GALLEGOS
+*/
+
+.rounded-rect {
+    background:white;
+    border-radius: 10px;
+    box-shadow: 0 0 50px -25px black;
+}
+
+.flex-center {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center.left {
+    left: 0px;
+    top: 2%;
+}
+
+.flex-center.right {
+    right: 0px;
+}
+
+.sidebar-content {
+    position: absolute;
+    width: 95%;
+    height: 95%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: gray;
+    
+}
+
+.sidebar-toggle {
+    position: absolute;
+    width: 45px;
+    height: 50px;
+    overflow: visible;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
+}
+
+.sidebar-toggle.left {
+   right: -3.3em;
+}
+
+.sidebar-toggle.right {
+    left: -1.5em;
+}
+
+.sidebar-toggle:hover {
+    color: #0aa1cf;
+    cursor: pointer;
+}
+
+.sidebar {
+    transition: transform 1s;
+    z-index: 1;
+   
+    top: 5%;
+    width: 21.7vw !important;
+  /*  left: 7px;*/
+}
+
+/*
+The sidebar styling has them "expanded" by default, we use CSS transforms to push them offscreen
+The toggleSidebar() function removes this class from the element in order to expand it.
+*/
+.left.collapsed {
+    transform: translatex(-18.3vw);
+    animation-duration: 2s;
+    animation-name: slidein2; 
+}
+@keyframes slidein2{
+    from{
+        transform: translatex(0);
+    }
+    to {
+        transform: translatex(-18.3vw);
+    }
+}
+
+
+.right.collapsed {
+  
+}
+
+
+
+
+
+.sidebar.left .sidebar-toggle.left .icon {
+    background-image: url("data:image/svg+xml,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Ctitle%3Ekeyboard_arrow_left%3C/title%3E%3Cpath fill='currentColor' d='M15.422 16.594l-1.406 1.406-6-6 6-6 1.406 1.406-4.594 4.594z'%3E%3C/path%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sidebar.left.collapsed .sidebar-toggle.left .icon {
+    background-image: url("../../imagenes_2/resource/iconFlecha.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.icon {
+    display: inline-block;
+    width: 70%;
+    height: 70%;
+    background-size: cover;
+}
+
+.icon:hover {
+    filter: invert(71%) sepia(45%) saturate(7285%) hue-rotate(158deg) brightness(90%) contrast(92%);
+}
+
